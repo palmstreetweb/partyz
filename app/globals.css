@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-display-raw), sans-serif;
+  --font-sans: var(--font-sans-raw), "Inter", system-ui, sans-serif;
+
+  --color-cream: #edebe6;
+  --color-offwhite: #faf5f6;
+  --color-nearwhite: #fefafb;
+  --color-warmwhite: #faf9f5;
+  --color-purple: #4f227c;
+  --color-ink: #141413;
+
+  --color-sky: #b8defa;
+  --color-pink: #ffaaf1;
+  --color-pink-light: #fbd3ff;
+  --color-blush: #f8b3b8;
+  --color-lime: #d2e796;
+  --color-yellow: #f7dd54;
+  --color-red: #ea392e;
+  --color-orange: #fb580d;
+  --color-indigo: #3330af;
+
+  --radius-input: 12px;
+  --radius-card: 16px;
+  --radius-card-lg: 24px;
+
+  --shadow-sticker: 8px 8px 0 0 rgba(79, 34, 124, 0.24);
+
+  --animate-marquee: marquee 80s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
